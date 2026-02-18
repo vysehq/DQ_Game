@@ -1,0 +1,37 @@
+
+---
+
+## 📦 GitHub 上传步骤（超详细）
+
+### 第一步：创建GitHub账号
+1. 访问 https://github.com/
+2. 点击 **"Sign up"** 注册（就像注册邮箱一样）
+
+### 第二步：创建新仓库
+1. 登录后点击右上角 **"+"** → **"New repository"**
+2. 仓库名填 `dragon-quest-ai`
+3. 选择 **"Public"**（公开，免费）
+4. 勾选 **"Add a README file"**
+5. 点击 **"Create repository"**
+
+### 第三步：上传文件（3种方法）
+
+**方法A：网页上传（最简单，适合新手）**
+1. 在新仓库页面点击 **"Add file"** → **"Upload files"**
+2. 把 `dragon_quest.py` 和 `requirements.txt` 拖进去
+3. 点击 **"Commit changes"**
+
+**方法B：使用GitHub Desktop（图形化）**
+1. 下载 [GitHub Desktop](https://desktop.github.com/)
+2. 登录账号，克隆仓库到本地
+3. 把文件复制进去，填写提交信息，点击 **"Commit to main"** → **"Push origin"**
+
+**方法C：命令行（最酷）**
+```bash
+# 在本地项目文件夹打开终端
+git init
+git add .
+git commit -m "初始版本：勇者斗恶龙AI版"
+git branch -M main
+git remote add origin https://github.com/你的用户名/dragon-quest-ai.git
+git push -u origin main
